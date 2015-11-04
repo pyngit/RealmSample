@@ -8,7 +8,7 @@
 import Foundation
 import RealmSwift
 /**
- 星座情報の
+ 星座情報データのドメイン
 */
 class SingsZodiacDomain:Object{
     // id

@@ -9,6 +9,11 @@
 import Foundation
 
 class UserService{
+    /**
+     ユーザ情報の取得
+     
+    - parameter UserDomain: 取得するユーザのIDをセットしたUserDomain
+    */
     func getUserInfo(userDomain:UserDomain) throws -> UserInfoVO{
         print("getUserInfo user id:\(userDomain.id)");
         let vo = UserInfoVO();
@@ -38,6 +43,7 @@ class UserService{
     }
     /*
     ユーザ登録
+    - parameter UserDomain: 登録するUserDomain
     */
     func add(userDomain:UserDomain) throws ->UserInfoVO{
         let vo = UserInfoVO();
